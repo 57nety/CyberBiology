@@ -1,0 +1,29 @@
+package ru.cyberbiology.test.gene;
+
+import ru.cyberbiology.test.prototype.IBot;
+import ru.cyberbiology.test.prototype.gene.ABotGeneController;
+
+/********************************************************************
+ //............... минералы прибавляются? ............................
+ if (command == 45) {  // если глубина больше половины, то он начинает накапливать минералы
+ if (y > (World.simulation.height / 2)) {
+ botIndirectIncCmdAddress(this, 1);
+ } else {
+ botIndirectIncCmdAddress(this, 2);
+ }
+ }
+ */
+public class GeneIsMineralGrow extends ABotGeneController
+{
+
+    @Override
+    public boolean onGene(IBot bot)
+    {
+        if (bot.getY() > (bot.getWorld().getHeight() / 2)) {
+            bot.indirectIncCmdAddress(1);
+        } else {
+            bot.indirectIncCmdAddress(2);
+        }
+        return false;
+    }
+}

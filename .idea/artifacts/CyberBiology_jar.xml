@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CyberBiology:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CyberBiology_jar</output-path>
+    <root id="archive" name="CyberBiology.jar">
+      <element id="module-output" name="CyberBiology" />
+    </root>
+  </artifact>
+</component>
