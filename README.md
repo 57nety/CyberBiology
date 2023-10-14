@@ -1,2 +1,2 @@
 # CyberBiology
-Имитационное моделирование генетического алгоритма
+This application implements genetic algorithm simulation.
